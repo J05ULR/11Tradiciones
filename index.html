@@ -443,27 +443,33 @@
 
         .footer-credits {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            flex-wrap: wrap;
         }
 
         .zero-systems-logo {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             text-decoration: none;
+            width: 100%;
+            max-width: 280px;
+            padding: 8px;
             transition: transform 0.3s ease, filter 0.3s ease;
         }
 
         .zero-systems-logo:hover {
-            transform: scale(1.03);
-            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+            transform: scale(1.05);
+            filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5));
         }
 
         .zero-systems-svg {
-            height: 32px;
-            width: auto;
+            width: 100%;
+            height: auto;
+            max-height: 70px;
+            display: block;
         }
     </style>
 </head>
@@ -572,7 +578,7 @@
         <footer>
             <div class="footer-credits">
                 <span>created by</span>
-                <div class="zero-systems-logo">
+                <a href="https://j05ulr.github.io/ZeroSystems/" target="_blank" rel="noopener noreferrer" class="zero-systems-logo">
                     <svg class="zero-systems-svg" viewBox="0 0 520 120" xmlns="http://www.w3.org/2000/svg">
                         <!-- Iso/Icono Zero Systems -->
                         <g fill="#FFFFFF">
@@ -584,7 +590,7 @@
                         <text x="180" y="62" font-family="'Montserrat', 'Arial Black', sans-serif" font-weight="900" font-size="40" fill="#FFFFFF" letter-spacing="3">ZERO SYSTEMS</text>
                         <text x="183" y="94" font-family="'Montserrat', sans-serif" font-weight="600" font-style="italic" font-size="22" fill="#E0E0E0" letter-spacing="8">CERO LÍMITES</text>
                     </svg>
-                </div>
+                </a>
             </div>
         </footer>
     </div>
